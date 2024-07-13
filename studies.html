@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учеба</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Дополнительные стили для страницы Учеба */
+        .content-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content-section p {
+            line-height: 1.6;
+        }
+
+        .content-section .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .content-section .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .content-section .gallery-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .content-section .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2>Учеба</h2>
+            <p><h4>I am a student of KBTU</h4></p>
+            
+            <!-- Фотоальбом -->
+            <ul class="gallery">
+                <li class="gallery-item">
+                    <img src="c:\Users\bekza\Downloads\20.jpg" alt="Учеба 1">
+                </li>
+                <li class="gallery-item">
+                    <img src="c:\Users\bekza\Downloads\25.jpg" alt="Учеба 2">
+                </li>
+                <li class="gallery-item">
+                    <img src="c:\Users\bekza\Downloads\26.jpg" alt="Учеба 3">
+                </li>
+                <li class="gallery-item">
+                    <img src="c:\Users\bekza\Downloads\24.jpg" alt="Учеба 3">
+                </li>
+                <!-- Добавьте больше элементов li с изображениями по мере необходимости -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Футер вашего сайта -->
+    </footer>
+</body>
+</html>
