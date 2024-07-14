@@ -5,11 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный сайт</title>
     <link rel="stylesheet" href="style.css">
-    <p><h3>contact me +7 (707) 101-2006</h3></p>
     <style>
-        /* Дополнительные стили для страницы Личный сайт */
+        /* Base styles for the website */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+
+        
+
         .content-section {
-            max-width: 400px;
+            max-width: 90%;
             margin: 20px auto;
             padding: 20px;
             background-color: #f9f9f9;
@@ -35,6 +68,44 @@
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            nav ul {
+                padding: 0;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .content-section {
+                padding: 10px;
+            }
+
+            .content-section h2 {
+                font-size: 20px;
+            }
+
+            header h1 {
+                font-size: 24px;
+                padding: 0 10px;
+            }
+
+            nav ul li a {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -52,12 +123,10 @@
     <main>
         <section class="content-section">
             <h2>Обо мне</h2>
-            <img src="c:\Users\bekza\Downloads\15.jpg" alt="Фото Бекзата">
-            <p><h4>Здравствуйте! Меня зовут Бекзат. Добро пожаловать на мой личный сайт.</h4></p>
+            <img src="images/15.jpg" alt="Фото Бекзата">
+            <p>Здравствуйте! Меня зовут Бекзат. Добро пожаловать на мой личный сайт.</p>
+            <h3>Contact me: +7 (707) 101-2006</h3>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Бекзат. Все права защищены.</p>
-    </footer>
 </body>
 </html>
