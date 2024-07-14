@@ -24,6 +24,76 @@
         .gray-text:hover {
             text-decoration: underline;
         }
+
+        /* Основные стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+
+        
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .gallery-item p {
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -43,12 +113,12 @@
             <h2>Мои проекты</h2>
             <div class="gallery">
                 <div class="gallery-item">
-                    <img src="c:\Users\bekza\Downloads\onlinemem.png" alt="Проект 1">
+                    <img src="C:\Users\bekza\OneDrive\Документы\GitHub\personal-website\images\onlinemem.png" alt="Проект 1">
                     <p>Online Memory Journal — это инновационная платформа, созданная для хранения и управления личными воспоминаниями и важными моментами вашей жизни в цифровом формате. Сайт позволяет пользователям создавать, редактировать и хранить свои дневниковые записи, фотографии, видео и аудиофайлы в одном безопасном и удобном месте, предоставляя возможность легко возвращаться к ценным воспоминаниям.</p>
                     <p><h3><center><a href="https://online-memory.vercel.app/" target="_blank">Перейти на сайт</a></center></h3></p>
                 </div>
                 <div class="gallery-item">
-                    <img src="c:\Users\bekza\Downloads\onlinetravel.png" alt="Проект 2">
+                    <img src="images/onlinetravel.png" alt="Проект 2">
                     <p>Virtual Travel Experience — это инновационная платформа, позволяющая пользователям исследовать мир, не выходя из дома. Сайт предоставляет виртуальные путешествия, интерактивные туры и уникальные культурные впечатления, используя современные технологии, такие как виртуальная реальность (VR) и дополненная реальность (AR). Это идеальный способ открыть для себя новые места, культуры и достопримечательности с комфортом и удобством.</p>
                     <p><h3><center>этот проект еще не завершен <br><br><a href="https://online-travel.vercel.app/" target="_blank" class="gray-text">Перейти на сайт</a></center></h3></p>
                 </div>
@@ -56,8 +126,5 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Бекзат. Все права защищены.</п>
-    </footer>
 </body>
 </html>
