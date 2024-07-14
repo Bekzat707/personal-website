@@ -6,25 +6,6 @@
     <title>Портфолио</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Стили для изменения цвета всех ссылок на зеленый */
-        a {
-            color: green;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Стили для изменения цвета текста ссылки на серый для Virtual Travel Experience */
-        .gray-text {
-            color: rgb(86, 86, 86);
-        }
-
-        .gray-text:hover {
-            text-decoration: underline;
-        }
-
         /* Основные стили */
         body {
             font-family: Arial, sans-serif;
@@ -60,7 +41,7 @@
             display: block;
         }
 
-        
+    
 
         main {
             padding: 20px;
@@ -68,6 +49,27 @@
 
         h1, h2 {
             text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        section p {
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
         .gallery {
@@ -94,6 +96,45 @@
         .gallery-item p {
             margin: 10px 0;
         }
+
+        /* Стили для изменения цвета всех ссылок на зеленый */
+        a {
+            color: green;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Стили для изменения цвета текста ссылки на серый для Virtual Travel Experience */
+        .gray-text {
+            color: rgb(86, 86, 86);
+        }
+
+        .gray-text:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            section h2 {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -104,7 +145,7 @@
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="blog.html">Блог</a></li>
                 <li><a href="portfolio.html">Портфолио</a></li>
-                <li><a href="contact.html">Контакты</а></li>
+                <li><a href="contact.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
