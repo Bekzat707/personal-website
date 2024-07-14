@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <style>
         /* Дополнительные стили для страницы Учеба */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+
+        
+
         .content-section {
             max-width: 800px;
             margin: 20px auto;
@@ -20,10 +56,12 @@
             color: #333;
             font-size: 24px;
             margin-bottom: 10px;
+            text-align: center;
         }
 
         .content-section p {
             line-height: 1.6;
+            margin-bottom: 20px;
         }
 
         .content-section .gallery {
@@ -32,13 +70,13 @@
             gap: 20px;
             list-style: none;
             padding: 0;
-            margin-top: 20px;
+            margin: 0;
         }
 
         .content-section .gallery-item {
             overflow: hidden;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .content-section .gallery-item img {
@@ -50,6 +88,26 @@
 
         .content-section .gallery-item img:hover {
             transform: scale(1.1);
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .content-section {
+                padding: 10px;
+            }
+
+            .content-section h2 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -73,24 +131,27 @@
             <!-- Фотоальбом -->
             <ul class="gallery">
                 <li class="gallery-item">
-                    <img src="c:\Users\bekza\Downloads\20.jpg" alt="Учеба 1">
+                    <img src="images/20.jpg" alt="Учеба 1">
                 </li>
                 <li class="gallery-item">
-                    <img src="c:\Users\bekza\Downloads\25.jpg" alt="Учеба 2">
+                    <img src="images/25.jpg" alt="Учеба 2">
                 </li>
                 <li class="gallery-item">
-                    <img src="c:\Users\bekza\Downloads\26.jpg" alt="Учеба 3">
+                    <img src="images/26.jpg" alt="Учеба 3">
                 </li>
                 <li class="gallery-item">
-                    <img src="c:\Users\bekza\Downloads\24.jpg" alt="Учеба 3">
+                    <img src="images/24.jpg" alt="Учеба 4">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/23.jpg" alt="Учеба 5">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/22.jpg" alt="Учеба 6">
                 </li>
                 <!-- Добавьте больше элементов li с изображениями по мере необходимости -->
             </ul>
         </section>
     </main>
 
-    <footer>
-        <!-- Футер вашего сайта -->
-    </footer>
 </body>
 </html>
